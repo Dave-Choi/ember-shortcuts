@@ -56,6 +56,8 @@
 
       if (!(infos = router.currentHandlerInfos)) return;
 
+      event.preventDefault();
+
       for (i = infos.length - 1; i >= 0; i--) {
         handler = infos[i].handler;
 
